@@ -1,0 +1,19 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="teamName">Team Name</label>
+        <input type="text" name="teamName" [(ngModel)]="teamName" id="teamName" placeholder="Add Team Name" />
+
+    </div>
+    <div class="form-control">
+        <label for="mascot">Mascot</label>
+        <input type="text" name="mascot" [(ngModel)]="mascot" id="mascot" placeholder="Add Mascot" />
+
+    </div>
+
+    <div class="form-control form-control-check">
+        <label for="active">Set Active</label>
+        <input type="checkbox" name="active" [(ngModel)]="active" id="active"  />
+
+    </div>
+    <input type="submit" value="Save Team" class="btn btn-block" />
+</form>

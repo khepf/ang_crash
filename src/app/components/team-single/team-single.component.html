@@ -1,0 +1,9 @@
+<div [ngClass]="{active: team.active}" class="team" (dblclick)="onToggle(team)">
+    <h3>{{team.teamName}} 
+        <fa-icon 
+        (click)="onDelete(team)"
+        [ngStyle]='{"color": "red"}' 
+        [icon]="faTimes">
+    </fa-icon></h3>
+    <p>{{team.mascot}}</p>
+</div>

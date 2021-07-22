@@ -1,0 +1,9 @@
+<app-add-team (onAddTeam)="addTeam($event)"></app-add-team>
+
+<app-team-single 
+*ngFor="let team of teams" 
+[team]="team" 
+(onDeleteTeam)="deleteTeam(team)"
+(onToggleActive)="toggleActive(team)"
+></app-team-single>
+<a routerLink="/">Go Back</a>
